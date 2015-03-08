@@ -6,7 +6,7 @@ function callBack (error, request, body){
 	do{
 	var index = Math.floor(Math.random()*data.length);
 	var band = data[index];
-	}while(!band.url || band.status === "Split-up");
+	}while(!band.url || band.status === "Split-up" || band.country != "United States");
 	console.log(band);
 	var bandInfo = band.name + " IS CrAY... They are blasphemous \nSatan worshippers" +
 	" who's lyrical themes include: \n" + band.lyrical_themes + " and the like." +
