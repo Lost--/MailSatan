@@ -7,10 +7,10 @@ function callBack (error, request, body){
 	var index = Math.floor(Math.random()*data.length);
 	var band = data[index];
 	}while(!band.url || band.status === "Split-up" || band.country != "United States");
-	console.log(band);
-	var bandInfo = band.name + " IS CrAY... They are blasphemous \nSatan worshippers" +
+	var bandInfo = "The band known as " + band.name + " demands immediate attention... They are blasphemous \nSatan worshippers" +
 	" who's lyrical themes include: \n" + band.lyrical_themes + " and the like." +
-	" You can find their\n information here: " + band.url;
+	" You can find their\n information here: " + band.url + 
+	"\n Go forth and picket their concerts, as He would have wanted.";
 	console.log(bandInfo);
 //'cabaretewilliam@hotmail.com'
 	sendgrid.send({
