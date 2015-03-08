@@ -7,15 +7,16 @@ function callBack (error, request, body){
 	var index = Math.floor(Math.random()*data.length);
 	var band = data[index];
 	}while(!band.url || band.status === "Split-up" || band.country != "United States");
-	var bandInfo = "The band known as " + band.name + " demands immediate attention... They are blasphemous \nSatan worshippers" +
-	" who's lyrical themes include: \n" + band.lyrical_themes + " and the like." +
-	" You can find their\n information here: " + band.url + 
-	"\n Go forth and picket their concerts, as He would have wanted.";
+	
+	var bandInfo = "The band known as " + band.name + " demands immediate attention... They are blasphemous Satan worshippers" +
+	" who's lyrical themes include: " + band.lyrical_themes + " and the like." +
+	" You can find their information here: " + band.url + 
+	" Go forth and picket their concerts, as He would have wanted.";
 	console.log(bandInfo);
-//'cabaretewilliam@hotmail.com'
+
 	sendgrid.send({
-  		to:       'cjohnwilkinson@hotmail.com',
-		cc:		  'belmontypython.cyler@gmail.com',
+  		to:       'cabaretewilliam@hotmail.com',
+		bcc:	  'cjohnwilkinson@hotmail.com',
   		from:     'SuperLongDong@dingus.gov',
   		subject:  'Heathens in need of picketing',
   		text:     bandInfo
