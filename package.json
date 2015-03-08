@@ -22,5 +22,6 @@
   "dependencies": {
     "request": "^2.53.0",
     "sendgrid": "1.6.0"
+	"Express": "*"
   }
 }

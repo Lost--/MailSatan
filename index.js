@@ -15,6 +15,7 @@ function callBack (error, request, body){
 //'cabaretewilliam@hotmail.com'
 	sendgrid.send({
   		to:       'cjohnwilkinson@hotmail.com',
+		cc:		  'belmontypython.cyler@gmail.com',
   		from:     'SuperLongDong@dingus.gov',
   		subject:  'Heathens in need of picketing',
   		text:     bandInfo
