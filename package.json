@@ -1,0 +1,26 @@
+{
+  "name": "HailSatan",
+  "version": "1.0.0",
+  "description": "Dope",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Lost--/HailSatan"
+  },
+  "keywords": [
+    "satan"
+  ],
+  "author": "Lost",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Lost--/HailSatan/issues"
+  },
+  "homepage": "https://github.com/Lost--/HailSatan",
+  "dependencies": {
+    "request": "^2.53.0",
+    "sendgrid": "1.6.0"
+  }
+}
