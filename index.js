@@ -9,7 +9,7 @@ function callBack (error, request, body){
 	}while(!band.url || band.status === "Split-up" || band.country != "United States");
 	
 	var bandInfo = "The band known as " + band.name + " demands immediate attention... They are blasphemous Satan worshippers" +
-	" who's lyrical themes include: " + band.lyrical_themes + " and the like." +
+	" whose lyrical themes include: " + band.lyrical_themes + " and the like." +
 	" You can find their information here: " + band.url + 
 	" Go forth and picket their concerts, as He would have wanted.";
 	console.log(bandInfo);
