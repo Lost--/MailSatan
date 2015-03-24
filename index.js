@@ -1,6 +1,8 @@
 var secrets = require("./secrets.js")
 var request = require("request");
+
 var sendgrid  = require('sendgrid')(secrets.USERNAME, secrets.PASSWORD);
+//wat
 
 function callBack (error, request, body){
 	var data = JSON.parse(body);
